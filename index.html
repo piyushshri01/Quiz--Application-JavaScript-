@@ -9,34 +9,49 @@
     <script src="js/quiz-app.js"></script>
 </head>
 <body>
-    <div class="header " onclick="fadeout()">
+        
+    <div id="myDIV" class="header">
             <h1 class="text">Would you play quiz application</h1>
-            <button class="playBtn ">Play</button>
+            <button  class="playBtn" onclick= off()>Play</button>
     </div>
+    
+       
+    
 
-    <!-- <div class="question" >
+     <div class="question" >
         <h3>What is your name ?</h3>
         <input type="radio" name="" id="" class="mcqOption">Piyush
         <input type="radio" name="" id="" class="mcqOption">Piyush <br>
         <input type="radio" name="" id="" class="mcqOption">Piyush
         <input type="radio" name="" id="" class="mcqOption">Piyush <br>
-        <button type="submit" class="playBtn"> Submit</button>
+        <button type="submit" class="playBtn" > Submit</button>
 
     </div>
 
 
-    <div class="result">
+    <!-- <div class="result">
 
-    </div> -->
-
-
+    </div>  -->
 
 
-    <!-- <script>
-        function fadeout(){
-        document.getElementsByClassName("header").style.display = "block"
-        }
-    </script> -->
+
+
+     <script>
+        function off(){
+        // document.getElementsByClassName("myDIV").style.display = "none"
+        // document.getElementById("question").style.visibility = "visible"
+
+
+        // var x = document.getElementById("myDIV");
+
+        // if (x.className === "header") {
+        // x.style.display = "none";
+        // }
+        // }
+
+        var x = document.getElementsByClassName("header");
+        x.style.display= "none";}
+    </script>
         
 </body>
 </html>
